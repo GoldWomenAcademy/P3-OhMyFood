@@ -1,0 +1,23 @@
+/*MENU PALETTE DU GOUT CSS ET RESPONSIVE*/
+
+.menu-palette {
+   background-color: $palette-bgr;
+   font-family: $palette-font;
+
+   @media all and (max-width: 550px) {
+       font-size: 10px;
+   }
+
+   .underline-palette {
+       @include underline($palette-clr);
+   }
+
+   .titre-palette {
+       font-size: 60px;
+       @include linear-gradient(#42973c, #bfff7e);
+
+       @media all and (max-width: 550px) {
+           font-size: 30px;
+       }
+   }
+}

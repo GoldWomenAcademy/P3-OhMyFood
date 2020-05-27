@@ -1,114 +1,114 @@
 /* *********MAIN PAGE CSS ET RESPONSIVE***** */
 
 body {
-   margin: 0px;
-}
-
-/* **********MENUS DISPOSITION************ */
-
-main {
-   display: grid;
-   grid-template-areas: "a b";
-   justify-content: center;
-   grid-gap: 50px;
-   margin: 50px;
-
-   @media all and (max-width: 800px) {
-       @include flex-column-center;
-   }
-
-   .carte {
-       height: 400px;
-       width: 300px;
-       @include flex-column-center;
-       box-shadow: 0px 0px 6px 6px #e7e2e2;
-
-       @media all and (max-width: 800px) {
-           margin: 30px;
-       }
-
-       @media all and (max-width: 350px) {
-           height: 380px;
-           width: 280px;
-       }
-
-       p {
-           text-transform: uppercase;
-           font-size: 30px;
-           font-family: 'Kalam', cursive;
-       }
-
-       a {
-           text-decoration: none;
-           text-align: center;
-       }
-
-   }
-}
-
-
-/* **************MENUS STYLE****************** */
-
-.note,
-.note a {
-   background-color: $note-bgr;
-   color: $note-clr;
-
-   i {
-       @include linear-gradient(#f05160, #f6916a);
-   }
-
-
-   h2 {
-       font-family: $note-font;
-       font-size: 25px;
-   }
-}
-
-.chic,
-.chic a {
-   background-color: $chic-bgr;
-   color: $chic-clr;
-
-   h2 {
-       font-family: $chic-font;
-       font-size: 21px;
-       @include linear-gradient(#d8852e, #905bfd);
-   }
-}
-
-.delice,
-.delice a {
-   background-color: $delice-bgr;
-   color: $delice-clr;
-
-   h2 {
-       font-family: $delice-font;
-       font-size: 35px;
-       @include linear-gradient(#0229dd, #55acfb);
-   }
-}
-
-.palette,
-.palette a {
-   background-color: $palette-bgr;
-   color: $palette-clr;
-
-   h2 {
-       font-family: $palette-font;
-       font-size: 30px;
-       @include linear-gradient(#42973c, #bfff7e);
-   }
-}
-
-
-/* *******************PROCHAINEMENT******************* */
-
-.coming_soon {
-   margin: 0 auto 40px;
-   font-size: 30px;
-   border-radius: 20px;
-   width: 300px;
-   height: 50px;
-   @include flex-center;
-}
+    margin: 0px;
+ }
+ 
+ /* **********MENUS DISPOSITION************ */
+ 
+ main {
+    display: grid;
+    grid-template-areas: "a b";
+    justify-content: center;
+    grid-gap: 50px;
+    margin: 50px;
+ 
+    @media all and (max-width: 800px) {
+        @include flex-column-center;
+    }
+ 
+    .carte {
+        height: 400px;
+        width: 300px;
+        @include flex-column-center;
+        box-shadow: 0px 0px 6px 6px #e7e2e2;
+ 
+        @media all and (max-width: 800px) {
+            margin: 30px;
+        }
+ 
+        @media all and (max-width: 350px) {
+            height: 380px;
+            width: 280px;
+        }
+ 
+        p {
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: 'Kalam', cursive;
+        }
+ 
+        a {
+            text-decoration: none;
+            text-align: center;
+        }
+ 
+    }
+ }
+ 
+ 
+ /* **************MENUS STYLE****************** */
+ 
+ .note,
+ .note a {
+    background-color: $note-bgr;
+    color: $note-clr;
+ 
+    i {
+        @include linear-gradient(#f05160, #f6916a);
+    }
+ 
+ 
+    h2 {
+        font-family: $note-font;
+        font-size: 25px;
+    }
+ }
+ 
+ .chic,
+ .chic a {
+    background-color: $chic-bgr;
+    color: $chic-clr;
+ 
+    h2 {
+        font-family: $chic-font;
+        font-size: 21px;
+        @include linear-gradient(#d8852e, #905bfd);
+    }
+ }
+ 
+ .delice,
+ .delice a {
+    background-color: $delice-bgr;
+    color: $delice-clr;
+ 
+    h2 {
+        font-family: $delice-font;
+        font-size: 35px;
+        @include linear-gradient(#0229dd, #55acfb);
+    }
+ }
+ 
+ .palette,
+ .palette a {
+    background-color: $palette-bgr;
+    color: $palette-clr;
+ 
+    h2 {
+        font-family: $palette-font;
+        font-size: 30px;
+        @include linear-gradient(#42973c, #bfff7e);
+    }
+ }
+ 
+ 
+ /* *******************PROCHAINEMENT******************* */
+ 
+ .coming_soon {
+    margin: 0 auto 40px;
+    font-size: 30px;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    @include flex-center;
+ }

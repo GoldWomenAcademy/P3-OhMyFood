@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
   },
   "repository": {
     "type": "git",
@@ -13,13 +17,10 @@
   "keywords": [
     "FK@rn$%zBmP#l4D*BDquI7@"
   ],
-  "author": "Fati PEREIRA",
+  "author": "Fati Pereira",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GoldWomenAcademy/P3-OhMyFood/issues"
   },
-  "homepage": "https://github.com/GoldWomenAcademy/P3-OhMyFood#readme",
-  "dependencies": {
-    "sass": "^1.26.5"
-  }
+  "homepage": "https://github.com/GoldWomenAcademy/P3-OhMyFood#readme"
 }

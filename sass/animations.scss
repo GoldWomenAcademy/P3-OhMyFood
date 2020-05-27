@@ -1,89 +1,89 @@
-/* ***************ANIMATIONS****************** */
+/*ANIMATIONS*/
 
-/* *********TRANSITION ZOOM-MENUS*******  */
+/* TRANSITION ZOOM-MENUS  */
 
-.anim_menus {
-   text-align: center;
+.zoom-menus {
+    text-align: center;
 
-   &:hover {
-       overflow: hidden;
-       transform: scale(1.15);
-       transition: transform 0.6s ease-in-out;
-       opacity: 0.8;
-   }
+    &:hover {
+        overflow: hidden;
+        transform: scale(1.15);
+        transition: transform 0.6s ease-in-out;
+        opacity: 0.8;
+    }
 }
 
 /* MIXIN TRANSITION SOULIGNEMENT TITRES MENUS */
 
 @mixin underline ($color) {
-   background: linear-gradient(to top, ($color) 5%, transparent 5.01%) no-repeat;
-   background-size: 0 100%;
-   transition: background-size 800ms;
+    background: linear-gradient(to top, ($color) 5%, transparent 5.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 800ms;
 
-   &:hover {
-       background-size: 100% 100%;
-   }
+    &:hover {
+        background-size: 100% 100%;
+    }
 }
 
-/* ****************KEYFRAMES****************** */
+/*KEYFRAMES*/
 
-/*  **********$ANIMATION TROIS POINTS******  */
+/*  ANIMATION TROIS POINTS  */
 
 .dots {
-   content: ".";
-   animation: dots 2s steps(4, end) infinite;
+    content: ".";
+    animation: dots 2s steps(4, end) infinite;
 }
 
 @keyframes dots {
 
-   0%,
-   20% {
-       color: rgba(0, 0, 0, 0);
-       text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
-   }
+    0%,
+    20% {
+        color: rgba(0, 0, 0, 0);
+        text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+    }
 
-   40% {
-       color: $bandeau-txt;
-       text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
-   }
+    40% {
+        color: $bandeau-txt;
+        text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+    }
 
-   60% {
-       text-shadow: 0.25em 0 0 $bandeau-txt, 0.5em 0 0 rgba(0, 0, 0, 0);
-   }
+    60% {
+        text-shadow: 0.25em 0 0 $bandeau-txt, 0.5em 0 0 rgba(0, 0, 0, 0);
+    }
 
-   80%,
-   100% {
-       text-shadow: 0.25em 0 0 $bandeau-txt, 0.5em 0 0 $bandeau-txt;
-   }
+    80%,
+    100% {
+        text-shadow: 0.25em 0 0 $bandeau-txt, 0.5em 0 0 $bandeau-txt;
+    }
 }
 
 
-/* ******************$ANIMATIONS MOVE***************** */
+/* ANIMATIONS MOVE */
 
 .move:hover {
-   animation: shake 1s ease-in-out;
+    animation: move 1s ease-in-out;
 }
 
 @keyframes move {
 
-   10%,
-   90% {
-       transform: translate3d(-1px, 0, 0);
-   }
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
 
-   20%,
-   80% {
-       transform: translate3d(2px, 0, 0);
-   }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
 
-   30%,
-   50%,
-   70% {
-       transform: translate3d(-4px, 0, 0);
-   }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
 
-   40%,
-   60% {
-       transform: translate3d(4px, 0, 0);
-   }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
